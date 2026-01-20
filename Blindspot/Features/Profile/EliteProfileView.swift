@@ -2,6 +2,7 @@ import SwiftUI
 
 struct EliteProfileView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.appLanguage) private var appLanguage
 
     @State private var industryExperience: String
     @State private var skillTagsText: String
@@ -14,41 +15,56 @@ struct EliteProfileView: View {
         _skillTagsText = State(initialValue: (existing?.skillTags ?? []).joined(separator: ", "))
         _weeklyHours = State(initialValue: existing?.weeklyHours ?? 10)
         _budgetUSD = State(initialValue: existing?.budgetUSD ?? 0)
-        _riskPreference = State(initialValue: existing?.riskPreference ?? "中等")
+        // migrate legacy zh values to new codes
+        let legacy = existing?.riskPreference ?? "medium"
+        let normalized: String
+        switch legacy {
+        case "保守":
+            normalized = "conservative"
+        case "中等":
+            normalized = "medium"
+        case "激进":
+            normalized = "aggressive"
+        default:
+            normalized = legacy
+        }
+        _riskPreference = State(initialValue: normalized)
     }
 
     var body: some View {
-        Form {
-            Section("行业经验") {
-                TextField("例如：SaaS / 电商 / 教育", text: $industryExperience)
+        let t = { (en: String, zh: String) in SRL10n.t(en: en, zhHans: zh, lang: appLanguage) }
+
+        return Form {
+            Section(t("Industry experience", "行业经验")) {
+                TextField(t("e.g. SaaS / E-commerce / Education", "例如：SaaS / 电商 / 教育"), text: $industryExperience)
             }
 
-            Section("技能标签") {
-                TextField("用逗号分隔，例如：编程, 自动化, 运营", text: $skillTagsText)
+            Section(t("Skills", "技能标签")) {
+                TextField(t("Comma-separated, e.g. Coding, Automation, Ops", "用逗号分隔，例如：编程, 自动化, 运营"), text: $skillTagsText)
                     .textInputAutocapitalization(.never)
             }
 
-            Section("可投入时间（每周）") {
-                Stepper("\(weeklyHours) 小时", value: $weeklyHours, in: 0...80)
+            Section(t("Time available (per week)", "可投入时间（每周）")) {
+                Stepper(String(format: t("%d hours", "%d 小时"), weeklyHours), value: $weeklyHours, in: 0...80)
             }
 
-            Section("预算（USD）") {
+            Section(t("Budget (USD)", "预算（USD）")) {
                 Stepper("\(budgetUSD)", value: $budgetUSD, in: 0...1_000_000, step: 50)
             }
 
-            Section("风险偏好") {
-                Picker("风险偏好", selection: $riskPreference) {
-                    Text("保守").tag("保守")
-                    Text("中等").tag("中等")
-                    Text("激进").tag("激进")
+            Section(t("Risk preference", "风险偏好")) {
+                Picker(t("Risk preference", "风险偏好"), selection: $riskPreference) {
+                    Text(t("Conservative", "保守")).tag("conservative")
+                    Text(t("Medium", "中等")).tag("medium")
+                    Text(t("Aggressive", "激进")).tag("aggressive")
                 }
                 .pickerStyle(.segmented)
             }
         }
-        .navigationTitle("Elite 画像")
+        .navigationTitle(t("Elite profile", "Elite 画像"))
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("保存") {
+                Button(t("Save", "保存")) {
                     let tags = skillTagsText
                         .split(separator: ",")
                         .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }

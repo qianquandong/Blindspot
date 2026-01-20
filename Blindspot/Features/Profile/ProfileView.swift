@@ -6,37 +6,41 @@ struct ProfileView: View {
     @State private var eliteProfile: EliteProfile? = EliteProfileStore.load()
     @Environment(\.openURL) private var openURL
     @State private var purchaseLoadingProductId: String?
+    @Environment(\.appLanguage) private var appLanguage
+    @AppStorage("app_language") private var appLanguageRaw: String = AppLanguage.en.rawValue
 
     var body: some View {
-        NavigationStack {
+        let t = { (en: String, zh: String) in SRL10n.t(en: en, zhHans: zh, lang: appLanguage) }
+
+        return NavigationStack {
             List {
-                Section("账号") {
-                    Text((appState.authSession.isAuthenticated || appState.authManager.isAuthenticated) ? "已登录" : "未登录")
+                Section(t("Account", "账号")) {
+                    Text((appState.authSession.isAuthenticated || appState.authManager.isAuthenticated) ? t("Signed in", "已登录") : t("Signed out", "未登录"))
                 }
 
-                Section("订阅") {
+                Section(t("Subscription", "订阅")) {
                     HStack {
-                        Text("当前档位")
+                        Text(t("Current tier", "当前档位"))
                         Spacer()
                         Text(appState.subscriptionManager.tier.rawValue)
                             .foregroundStyle(.secondary)
                     }
-                    Button("刷新权益") {
+                    Button(t("Refresh entitlements", "刷新权益")) {
                         Task { await appState.subscriptionManager.refreshEntitlements() }
                     }
-                    Button("管理订阅（App Store）") {
+                    Button(t("Manage subscriptions (App Store)", "管理订阅（App Store）")) {
                         if let url = URL(string: "https://apps.apple.com/account/subscriptions") {
                             openURL(url)
                         }
                     }
-                    Button("恢复购买") {
+                    Button(t("Restore purchases", "恢复购买")) {
                         Task { await appState.subscriptionManager.restorePurchases() }
                     }
                 }
 
 #if DEBUG
-                Section("调试（无后端 / 无 App Store 产品时使用）") {
-                    Picker("强制档位", selection: $appState.subscriptionManager.tier) {
+                Section(t("Debug (when no backend / no App Store products)", "调试（无后端 / 无 App Store 产品时使用）")) {
+                    Picker(t("Force tier", "强制档位"), selection: $appState.subscriptionManager.tier) {
                         Text("Free").tag(SubscriptionTier.free)
                         Text("Pro").tag(SubscriptionTier.pro)
                         Text("Elite").tag(SubscriptionTier.elite)
@@ -44,9 +48,9 @@ struct ProfileView: View {
                 }
 #endif
 
-                Section("升级") {
+                Section(t("Upgrade", "升级")) {
                     if appState.subscriptionManager.products.isEmpty {
-                        Text(appState.subscriptionManager.isLoading ? "加载中…" : "暂无可购买产品（请检查产品 ID）")
+                        Text(appState.subscriptionManager.isLoading ? t("Loading…", "加载中…") : t("No purchasable products (check product IDs)", "暂无可购买产品（请检查产品 ID）"))
                             .foregroundStyle(.secondary)
                     } else {
                         ForEach(appState.subscriptionManager.products, id: \.id) { p in
@@ -84,7 +88,7 @@ struct ProfileView: View {
                         EliteProfileView(existing: eliteProfile)
                     } label: {
                         VStack(alignment: .leading, spacing: 6) {
-                            Text("编辑创业画像")
+                            Text(t("Edit founder profile", "编辑创业画像"))
                             Text(eliteProfileSummary)
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
@@ -93,8 +97,16 @@ struct ProfileView: View {
                     .disabled(appState.subscriptionManager.tier < .elite)
 
                     if appState.subscriptionManager.tier < .elite {
-                        Text("升级到 Elite 后可填写画像并获得个性化方向（MVP 先做基础表单）")
+                        Text(t("Upgrade to Elite to fill your profile and get personalized directions (MVP uses a basic form).", "升级到 Elite 后可填写画像并获得个性化方向（MVP 先做基础表单）"))
                             .foregroundStyle(.secondary)
+                    }
+                }
+
+                Section(t("Settings", "设置")) {
+                    Picker(t("Language", "语言"), selection: $appLanguageRaw) {
+                        ForEach(AppLanguage.allCases) { lang in
+                            Text(lang.displayName).tag(lang.rawValue)
+                        }
                     }
                 }
 
@@ -104,11 +116,11 @@ struct ProfileView: View {
                         appState.authSession.signOut()
                         Task { await appState.authManager.signOut() }
                     } label: {
-                        Text("退出登录")
+                        Text(t("Sign out", "退出登录"))
                     }
                 }
             }
-            .navigationTitle("Profile")
+            .navigationTitle(t("Profile", "Profile"))
         }
         .task {
             await appState.subscriptionManager.refreshEntitlements()
@@ -117,22 +129,23 @@ struct ProfileView: View {
         .onAppear {
             eliteProfile = EliteProfileStore.load()
         }
-        .alert("订阅错误", isPresented: Binding(
+        .alert(t("Subscription error", "订阅错误"), isPresented: Binding(
             get: { appState.subscriptionManager.lastErrorMessage != nil },
             set: { isPresented in
                 if !isPresented { appState.subscriptionManager.lastErrorMessage = nil }
             }
         )) {
-            Button("知道了", role: .cancel) { appState.subscriptionManager.lastErrorMessage = nil }
+            Button(t("OK", "知道了"), role: .cancel) { appState.subscriptionManager.lastErrorMessage = nil }
         } message: {
             Text(appState.subscriptionManager.lastErrorMessage ?? "")
         }
     }
 
     private var eliteProfileSummary: String {
-        guard let eliteProfile else { return "未填写" }
+        let t = { (en: String, zh: String) in SRL10n.t(en: en, zhHans: zh, lang: appLanguage) }
+        guard let eliteProfile else { return t("Not filled", "未填写") }
         let tags = eliteProfile.skillTags.prefix(3).joined(separator: " / ")
-        return "\(eliteProfile.industryExperience.isEmpty ? "行业未填" : eliteProfile.industryExperience) · \(tags.isEmpty ? "技能未填" : tags)"
+        return "\(eliteProfile.industryExperience.isEmpty ? t("Industry not set", "行业未填") : eliteProfile.industryExperience) · \(tags.isEmpty ? t("Skills not set", "技能未填") : tags)"
     }
 }
 

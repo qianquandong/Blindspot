@@ -24,8 +24,8 @@ struct SRCardSectionView: View {
 #Preview {
     SRCardSectionView(
         icon: "🧬",
-        title: "第一性原理",
-        text: "这里是更舒展的段落排版与行距，阅读体验更像卡片，而不是挤在 List 里。",
+        title: "First principles",
+        text: "More spacious paragraph spacing makes this feel like a card, not a cramped list.",
         tint: .purple
     )
     .padding()

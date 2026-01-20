@@ -7,9 +7,14 @@ struct TodayView: View {
     @State private var copiedToast: Bool = false
     @State private var demoFeed: DemoFeed = .curated
     @AppStorage("demoBannerDismissed") private var demoBannerDismissed: Bool = false
+    @Environment(\.appLanguage) private var appLanguage
+
+    private func tr(_ en: String, _ zh: String) -> String {
+        SRL10n.t(en: en, zhHans: zh, lang: appLanguage)
+    }
 
     var body: some View {
-        NavigationStack {
+        return NavigationStack {
             content
             .navigationTitle("")
             .navigationBarTitleDisplayMode(.inline)
@@ -20,7 +25,7 @@ struct TodayView: View {
                 }
                 if AppConfig.isMockMode {
                     ToolbarItem(placement: .topBarLeading) {
-                        Button("复制邮件HTML") {
+                        Button(tr("Copy email HTML", "复制邮件HTML")) {
                             UIPasteboard.general.string = DemoReportStore.nbcEmailHTML()
                             copiedToast = true
                         }
@@ -34,10 +39,10 @@ struct TodayView: View {
         .onChange(of: vm.selectedDate) { _, _ in
             Task { await refreshIfNeeded() }
         }
-        .alert("已复制", isPresented: $copiedToast) {
-            Button("知道了", role: .cancel) { copiedToast = false }
+        .alert(tr("Copied", "已复制"), isPresented: $copiedToast) {
+            Button(tr("OK", "知道了"), role: .cancel) { copiedToast = false }
         } message: {
-            Text("邮件 HTML 已复制到剪贴板，可直接粘贴到邮件发送。")
+            Text(tr("Email HTML copied to clipboard.", "邮件 HTML 已复制到剪贴板，可直接粘贴到邮件发送。"))
         }
     }
 
@@ -52,18 +57,18 @@ struct TodayView: View {
                     VStack(alignment: .leading, spacing: SRTheme.Spacing.l) {
                         todayHeader
                         UpgradeCTAView(
-                            title: "解锁今日创业指南（Pro）",
-                            message: "升级后可查看：今日一句结论、新机会/高风险赛道、行动建议，以及 30 天游览"
+                            title: tr("Unlock Today (Pro)", "解锁今日创业指南（Pro）"),
+                            message: tr("Upgrade to see the daily conclusion, opportunities/risks, suggested actions, and 30-day history.", "升级后可查看：今日一句结论、新机会/高风险赛道、行动建议，以及 30 天游览")
                         )
                         if SupabaseClientProvider.shared != nil {
                             SRCardSectionView(
                                 icon: "🧭",
-                                title: "今日机会（免费预览）",
-                                text: vm.dailyOpportunities.first?.summary ?? (vm.isLoading ? "加载中…" : "暂无数据"),
+                                title: tr("Today's opportunity (preview)", "今日机会（免费预览）"),
+                                text: vm.dailyOpportunities.first?.summary ?? (vm.isLoading ? tr("Loading…", "加载中…") : tr("No data", "暂无数据")),
                                 tint: .blue
                             )
                         } else {
-                            Text("Free 用户不展示结论/建议（符合 PRD 权限）")
+                            Text(tr("Free users don't see conclusions/actions (per PRD).", "Free 用户不展示结论/建议（符合 PRD 权限）"))
                                 .foregroundStyle(.secondary)
                         }
                         Spacer(minLength: 0)
@@ -86,7 +91,7 @@ struct TodayView: View {
                         }
 
                         if let updatedAt = vm.brief?.updatedAt {
-                            Text("最近更新时间：\(updatedAt, style: .time)")
+                            Text(String(format: tr("Last updated: %@", "最近更新时间：%@"), updatedAt.formatted(date: .omitted, time: .shortened)))
                                 .font(.footnote)
                                 .foregroundStyle(SRTheme.secondaryText)
                                 .padding(.top, 4)
@@ -103,11 +108,11 @@ struct TodayView: View {
                 .refreshable {
                     await refreshIfNeeded(force: true)
                 }
-                .alert("加载失败", isPresented: Binding(
+                .alert(tr("Load failed", "加载失败"), isPresented: Binding(
                     get: { vm.errorMessage != nil },
                     set: { isPresented in if !isPresented { vm.errorMessage = nil } }
                 )) {
-                    Button("知道了", role: .cancel) { vm.errorMessage = nil }
+                    Button(tr("OK", "知道了"), role: .cancel) { vm.errorMessage = nil }
                 } message: {
                     Text(vm.errorMessage ?? "")
                 }
@@ -130,14 +135,14 @@ struct TodayView: View {
     }
 
     private var proEliteSupabaseCards: some View {
-        VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
-            Text("今日机会")
+        return VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
+            Text(tr("Today's opportunities", "今日机会"))
                 .font(SRTheme.sectionTitleFont())
                 .foregroundStyle(SRTheme.title)
 
             if vm.dailyOpportunities.isEmpty {
                 SRCard(background: SRTheme.pastelBlue.opacity(0.55)) {
-                    Text(vm.isLoading ? "加载中…" : "暂无数据")
+                    Text(vm.isLoading ? tr("Loading…", "加载中…") : tr("No data", "暂无数据"))
                         .foregroundStyle(SRTheme.body)
                 }
             } else {
@@ -145,7 +150,7 @@ struct TodayView: View {
                     ForEach(vm.dailyOpportunities) { o in
                         SRCard(background: SRTheme.pastelLavender.opacity(0.62)) {
                             VStack(alignment: .leading, spacing: 10) {
-                                Text(o.title ?? "未命名")
+                                Text(o.title ?? tr("Untitled", "未命名"))
                                     .font(.headline.weight(.bold))
                                     .foregroundStyle(SRTheme.title)
 
@@ -169,13 +174,13 @@ struct TodayView: View {
     }
 
     private var proEliteBriefCards: some View {
-        VStack(alignment: .leading, spacing: SRTheme.Spacing.xl) {
+        return VStack(alignment: .leading, spacing: SRTheme.Spacing.xl) {
             SRHeroCard(background: SRTheme.pastelLavender) {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("今日结论")
+                    Text(tr("Daily conclusion", "今日结论"))
                         .font(.caption.weight(.semibold))
                         .foregroundStyle(SRTheme.secondaryText)
-                    Text(vm.brief?.dailyConclusion ?? (vm.isLoading ? "加载中…" : "暂无数据"))
+                    Text(vm.brief?.dailyConclusion ?? (vm.isLoading ? tr("Loading…", "加载中…") : tr("No data", "暂无数据")))
                         .font(.title3.weight(.bold))
                         .foregroundStyle(SRTheme.title)
                         .lineSpacing(6)
@@ -184,22 +189,22 @@ struct TodayView: View {
             }
 
             pastelSignalSection(
-                title: "新机会",
+                title: tr("Opportunities", "新机会"),
                 background: SRTheme.pastelLavender.opacity(0.68),
-                emptyText: vm.isLoading ? "加载中…" : "暂无机会",
+                emptyText: vm.isLoading ? tr("Loading…", "加载中…") : tr("No opportunities", "暂无机会"),
                 items: vm.brief?.opportunities ?? []
             )
 
             pastelSignalSection(
-                title: "高风险赛道",
+                title: tr("Risks", "高风险赛道"),
                 background: SRTheme.pastelMint.opacity(0.68),
-                emptyText: vm.isLoading ? "加载中…" : "暂无风险",
+                emptyText: vm.isLoading ? tr("Loading…", "加载中…") : tr("No risks", "暂无风险"),
                 items: vm.brief?.risks ?? []
             )
 
             if let actions = vm.brief?.suggestedActions, !actions.isEmpty {
                 VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
-                    Text("行动建议")
+                    Text(tr("Suggested actions", "行动建议"))
                         .font(SRTheme.sectionTitleFont())
                         .foregroundStyle(SRTheme.title)
 
@@ -223,7 +228,7 @@ struct TodayView: View {
         emptyText: String,
         items: [Signal]
     ) -> some View {
-        VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
+        return VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
             Text(title)
                 .font(SRTheme.sectionTitleFont())
                 .foregroundStyle(SRTheme.title)
@@ -249,7 +254,7 @@ struct TodayView: View {
                                         Text(s.industry)
                                         Text(s.signalType.rawValue)
                                         if let c = s.confidenceScore {
-                                            Text("置信度 \(String(format: "%.2f", c))")
+                                            Text(String(format: tr("Confidence %@", "置信度 %@"), String(format: "%.2f", c)))
                                         }
                                     }
                                     .font(.footnote.weight(.semibold))
@@ -265,7 +270,7 @@ struct TodayView: View {
     }
 
     private var demoReportContent: some View {
-        ScrollView {
+        return ScrollView {
             LazyVStack(alignment: .leading, spacing: 12, pinnedViews: [.sectionHeaders]) {
                 Section(header: filterStickyHeader) {
                     if !demoBannerDismissed {
@@ -278,8 +283,8 @@ struct TodayView: View {
                     if topics.isEmpty {
                         SRCardSectionView(
                             icon: "⏳",
-                            title: vm.isLoading ? "加载中…" : "暂无内容",
-                            text: vm.isLoading ? "正在读取本地 Demo 报告…" : "没有可展示的话题。",
+                            title: vm.isLoading ? tr("Loading…", "加载中…") : tr("No content", "暂无内容"),
+                            text: vm.isLoading ? tr("Reading local Demo report…", "正在读取本地 Demo 报告…") : tr("No topics to show.", "没有可展示的话题。"),
                             tint: .gray
                         )
                         .padding(.horizontal, 16)
@@ -304,11 +309,11 @@ struct TodayView: View {
             StrategicTopicDetailView(topic: t)
         }
         .refreshable { await refreshIfNeeded(force: true) }
-        .alert("加载失败", isPresented: Binding(
+        .alert(tr("Load failed", "加载失败"), isPresented: Binding(
             get: { vm.errorMessage != nil },
             set: { isPresented in if !isPresented { vm.errorMessage = nil } }
         )) {
-            Button("知道了", role: .cancel) { vm.errorMessage = nil }
+            Button(tr("OK", "知道了"), role: .cancel) { vm.errorMessage = nil }
         } message: {
             Text(vm.errorMessage ?? "")
         }
@@ -318,7 +323,7 @@ struct TodayView: View {
         let all = vm.strategicReport?.topics ?? []
         switch demoFeed {
         case .curated:
-            return all.filter { $0.sourceTitle == "资讯摘要" }
+            return all.filter { $0.sourceTitle == "News summary" }
         case .nbc:
             return all.filter { $0.sourceTitle == "NBC RSS" }
         case .all:
@@ -327,16 +332,16 @@ struct TodayView: View {
     }
 
     private var filterStickyHeader: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("每日深度战略洞察")
+        return VStack(alignment: .leading, spacing: 10) {
+            Text(tr("Daily strategic insights", "每日深度战略洞察"))
                 .font(.title3.weight(.bold))
                 .padding(.horizontal, 16)
                 .padding(.top, 10)
 
-            Picker("来源", selection: $demoFeed) {
-                Text("精选摘要").tag(DemoFeed.curated)
+            Picker(tr("Source", "来源"), selection: $demoFeed) {
+                Text(tr("Curated", "精选摘要")).tag(DemoFeed.curated)
                 Text("NBC RSS").tag(DemoFeed.nbc)
-                Text("全部").tag(DemoFeed.all)
+                Text(tr("All", "全部")).tag(DemoFeed.all)
             }
             .pickerStyle(.segmented)
             .padding(.horizontal, 16)
@@ -347,17 +352,17 @@ struct TodayView: View {
     }
 
     private var demoBanner: some View {
-        SRCard(background: SRTheme.pastelBlue.opacity(0.55)) {
+        return SRCard(background: SRTheme.pastelBlue.opacity(0.55)) {
             HStack(alignment: .top, spacing: 12) {
                 Image(systemName: "info.circle")
                     .font(.title3)
                     .foregroundStyle(SRTheme.secondaryText)
 
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("本地 Demo（不连后端）")
+                    Text(tr("Local Demo (no backend)", "本地 Demo（不连后端）"))
                         .font(.headline.weight(.bold))
                         .foregroundStyle(SRTheme.title)
-                    Text("每条新闻=独立话题；可用顶部筛选切换来源。")
+                    Text(tr("Each news item is a topic. Use the filter above to switch sources.", "每条新闻=独立话题；可用顶部筛选切换来源。"))
                         .font(.subheadline)
                         .foregroundStyle(SRTheme.secondaryText)
                         .lineSpacing(3)
@@ -380,7 +385,7 @@ struct TodayView: View {
     }
 
     private func demoTopicCard(_ t: StrategicTopic) -> some View {
-        SRCard(background: SRTheme.pastelLavender.opacity(0.55)) {
+        return SRCard(background: SRTheme.pastelLavender.opacity(0.55)) {
             VStack(alignment: .leading, spacing: 12) {
                 Text(t.topicName)
                     .font(.headline.weight(.bold))
@@ -392,7 +397,7 @@ struct TodayView: View {
 
                 VStack(alignment: .leading, spacing: 12) {
                     VStack(alignment: .leading, spacing: 8) {
-                        SRBadgeView(icon: "🧬", title: "第一性原理", tint: .purple)
+                        SRBadgeView(icon: "🧬", title: self.tr("First principles", "第一性原理"), tint: .purple)
                         Text(t.firstPrinciples)
                             .font(.subheadline)
                             .foregroundStyle(SRTheme.body)
@@ -401,7 +406,7 @@ struct TodayView: View {
                     }
 
                     VStack(alignment: .leading, spacing: 8) {
-                        SRBadgeView(icon: "💰", title: "商业机会", tint: .green)
+                        SRBadgeView(icon: "💰", title: self.tr("Business opportunity", "商业机会"), tint: .green)
                         Text(t.businessOpportunity)
                             .font(.subheadline)
                             .foregroundStyle(SRTheme.body)
@@ -410,7 +415,7 @@ struct TodayView: View {
                     }
 
                     VStack(alignment: .leading, spacing: 8) {
-                        SRBadgeView(icon: "🗺️", title: "未来路线", tint: .blue)
+                        SRBadgeView(icon: "🗺️", title: self.tr("Roadmap", "未来路线"), tint: .blue)
                         Text(t.futureRoadmap)
                             .font(.subheadline)
                             .foregroundStyle(SRTheme.body)

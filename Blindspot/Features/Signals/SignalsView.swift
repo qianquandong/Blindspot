@@ -5,13 +5,16 @@ struct SignalsView: View {
     @StateObject private var vm = SignalsViewModel()
     @State private var seenSignalIDs: Set<String> = []
     @State private var serverDenied: Bool = false
+    @Environment(\.appLanguage) private var appLanguage
 
     var body: some View {
-        NavigationStack {
+        let t = { (en: String, zh: String) in SRL10n.t(en: en, zhHans: zh, lang: appLanguage) }
+
+        return NavigationStack {
             List {
                 if let updatedAt = vm.updatedAt {
                     Section {
-                        Text("最近更新时间：\(updatedAt, style: .time)")
+                        Text(String(format: t("Last updated: %@", "最近更新时间：%@"), updatedAt.formatted(date: .omitted, time: .shortened)))
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -19,40 +22,40 @@ struct SignalsView: View {
                 if appState.subscriptionManager.tier == .free {
                     Section {
                         UpgradeCTAView(
-                            title: "Free：每天最多滑动查看 30 条",
-                            message: "升级 Pro 后可无限浏览全部 Signals，并查看 Today 完整结论与行动建议"
+                            title: t("Free: up to 30 signals per day", "Free：每天最多滑动查看 30 条"),
+                            message: t("Upgrade to Pro for unlimited Signals and full Today content.", "升级 Pro 后可无限浏览全部 Signals，并查看 Today 完整结论与行动建议")
                         )
                     }
                 }
 
                 Section {
-                    Picker("类型", selection: Binding(
+                    Picker(t("Type", "类型"), selection: Binding(
                         get: { vm.selectedType },
                         set: { newValue in
                             vm.selectedType = newValue
                             Task { await vm.loadFirstPage(accessToken: appState.authSession.accessToken) }
                         }
                     )) {
-                        Text("全部").tag(SignalType?.none)
+                        Text(t("All", "全部")).tag(SignalType?.none)
                         ForEach(SignalType.allCases) { t in
                             Text(t.rawValue).tag(Optional(t))
                         }
                     }
 
-                    TextField("行业关键词（可选）", text: $vm.industryKeyword)
+                    TextField(t("Industry keyword (optional)", "行业关键词（可选）"), text: $vm.industryKeyword)
                         .textInputAutocapitalization(.never)
                         .onSubmit {
                             Task { await vm.loadFirstPage(accessToken: appState.authSession.accessToken) }
                         }
                 }
 
-                Section("信号") {
+                Section(t("Signals", "信号")) {
                     let shown = shownSignals
                     if shown.isEmpty && vm.isLoading {
-                        Text("加载中…")
+                        Text(t("Loading…", "加载中…"))
                             .foregroundStyle(.secondary)
                     } else if shown.isEmpty {
-                        Text("暂无信号")
+                        Text(t("No signals", "暂无信号"))
                             .foregroundStyle(.secondary)
                     } else {
                         ForEach(shown) { s in
@@ -63,7 +66,7 @@ struct SignalsView: View {
                                         Text(s.industry)
                                         Text(s.signalType.rawValue)
                                         if let c = s.confidenceScore {
-                                            Text("置信度 \(String(format: "%.2f", c))")
+                                            Text(String(format: t("Confidence %@", "置信度 %@"), String(format: "%.2f", c)))
                                         }
                                     }
                                     .font(.caption)
@@ -76,10 +79,10 @@ struct SignalsView: View {
                         }
 
                         if appState.subscriptionManager.tier == .free, vm.signals.count > 30 {
-                            Text("已达今日上限（30 条）。升级 Pro 解锁更多。")
+                            Text(t("Daily limit reached (30). Upgrade to Pro for more.", "已达今日上限（30 条）。升级 Pro 解锁更多。"))
                                 .foregroundStyle(.secondary)
                         } else if serverDenied {
-                            Text("已达今日上限（服务器统计）。升级 Pro 解锁更多。")
+                            Text(t("Daily limit reached (server). Upgrade to Pro for more.", "已达今日上限（服务器统计）。升级 Pro 解锁更多。"))
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -96,11 +99,11 @@ struct SignalsView: View {
         .refreshable {
             await vm.loadFirstPage(accessToken: appState.authSession.accessToken)
         }
-        .alert("加载失败", isPresented: Binding(
+        .alert(t("Load failed", "加载失败"), isPresented: Binding(
             get: { vm.errorMessage != nil },
             set: { isPresented in if !isPresented { vm.errorMessage = nil } }
         )) {
-            Button("知道了", role: .cancel) { vm.errorMessage = nil }
+            Button(t("OK", "知道了"), role: .cancel) { vm.errorMessage = nil }
         } message: {
             Text(vm.errorMessage ?? "")
         }

@@ -48,12 +48,12 @@ enum DemoReportStore {
             source: .init(name: "NBC Demo (fallback)", link: "https://feeds.nbcnews.com/nbcnews/public/news"),
             topics: [
                 StrategicTopic(
-                    sourceTitle: "Demo 数据不可用",
+                    sourceTitle: "Demo data unavailable",
                     sourceLink: "https://feeds.nbcnews.com/nbcnews/public/news",
-                    topicName: "Demo 数据不可用（\(reason)）",
-                    firstPrinciples: "已检测到 Demo JSON 解析失败。当前内嵌 JSON 大小约 \(approxSize) bytes。请把此页的错误原因（括号内）发我，我会按具体 DecodingError 精确修复。",
-                    businessOpportunity: "当前为兜底提示，用于避免 Today 页面空白。",
-                    futureRoadmap: "修复 Demo 数据后，此条将被真实话题列表替换。"
+                    topicName: "Demo data unavailable (\(reason))",
+                    firstPrinciples: "We detected a failure while parsing the embedded Demo JSON. Current embedded JSON size is ~\(approxSize) bytes. Share the reason string above and we can pinpoint the exact DecodingError.",
+                    businessOpportunity: "This is a fallback message to avoid showing an empty Today screen.",
+                    futureRoadmap: "After the Demo data is fixed, this entry will be replaced by real topics."
                 )
             ]
         )

@@ -2,25 +2,28 @@ import SwiftUI
 
 struct SignalDetailView: View {
     let signal: Signal
+    @Environment(\.appLanguage) private var appLanguage
 
     var body: some View {
-        ScrollView {
+        let t = { (en: String, zh: String) in SRL10n.t(en: en, zhHans: zh, lang: appLanguage) }
+
+        return ScrollView {
             VStack(alignment: .leading, spacing: 14) {
-                SRCardSectionView(icon: "🧾", title: "事实摘要", text: signal.summary)
+                SRCardSectionView(icon: "🧾", title: t("Summary", "事实摘要"), text: signal.summary)
 
                 VStack(alignment: .leading, spacing: 10) {
                     HStack(spacing: 10) {
                         Text("🏷️").font(.title3)
-                        Text("行业 / 类型").font(.headline)
+                        Text(t("Industry / Type", "行业 / 类型")).font(.headline)
                     }
 
                     VStack(alignment: .leading, spacing: 6) {
-                        LabeledContent("行业", value: signal.industry)
-                        LabeledContent("类型", value: signal.signalType.rawValue)
+                        LabeledContent(t("Industry", "行业"), value: signal.industry)
+                        LabeledContent(t("Type", "类型"), value: signal.signalType.rawValue)
                         if let c = signal.confidenceScore {
-                            LabeledContent("置信度", value: String(format: "%.2f", c))
+                            LabeledContent(t("Confidence", "置信度"), value: String(format: "%.2f", c))
                         }
-                        LabeledContent("日期", value: signal.date.yyyyMMddUTCString())
+                        LabeledContent(t("Date", "日期"), value: signal.date.yyyyMMddUTCString())
                     }
                     .font(.subheadline)
                 }
@@ -34,10 +37,10 @@ struct SignalDetailView: View {
                 )
 
                 if let impact = signal.impact, !impact.isEmpty {
-                    SRCardSectionView(icon: "📌", title: "可能影响", text: impact)
+                    SRCardSectionView(icon: "📌", title: t("Potential impact", "可能影响"), text: impact)
                 }
                 if let evidence = signal.evidence, !evidence.isEmpty {
-                    SRCardSectionView(icon: "🔗", title: "证据 / 来源", text: evidence)
+                    SRCardSectionView(icon: "🔗", title: t("Evidence / Sources", "证据 / 来源"), text: evidence)
                 }
             }
             .padding(.horizontal, 16)
@@ -55,9 +58,9 @@ struct SignalDetailView: View {
             date: Date(),
             industry: "AI",
             signalType: .emerging,
-            summary: "某项新技术指标快速提升…",
-            evidence: "来源：某研究报告",
-            impact: "可能导致成本下降与新产品形态出现",
+            summary: "A new metric is improving rapidly…",
+            evidence: "Source: a research report",
+            impact: "This may reduce costs and enable new product forms",
             confidenceScore: 0.72
         ))
     }

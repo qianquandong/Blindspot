@@ -2,6 +2,7 @@ import SwiftUI
 
 struct EmailOTPLoginView: View {
     @EnvironmentObject private var appState: AppState
+    @Environment(\.appLanguage) private var appLanguage
 
     @State private var step: Step = .enterEmail
     @State private var email: String = ""
@@ -15,18 +16,20 @@ struct EmailOTPLoginView: View {
     }
 
     var body: some View {
-        NavigationStack {
+        let t = { (en: String, zh: String) in SRL10n.t(en: en, zhHans: zh, lang: appLanguage) }
+
+        return NavigationStack {
             VStack(alignment: .leading, spacing: 14) {
-                Text("登录")
+                Text(t("Sign in", "登录"))
                     .font(.largeTitle.bold())
 
-                Text("使用邮箱验证码登录（6 位）")
+                Text(t("Sign in with a 6-digit email code", "使用邮箱验证码登录（6 位）"))
                     .foregroundStyle(.secondary)
 
                 Group {
                     switch step {
                     case .enterEmail:
-                        TextField("邮箱地址", text: $email)
+                        TextField(t("Email address", "邮箱地址"), text: $email)
                             .textInputAutocapitalization(.never)
                             .keyboardType(.emailAddress)
                             .autocorrectionDisabled()
@@ -35,36 +38,36 @@ struct EmailOTPLoginView: View {
                         Button {
                             Task { await sendCode() }
                         } label: {
-                            Text(isLoading ? "发送中…" : "发送验证码")
+                            Text(isLoading ? t("Sending…", "发送中…") : t("Send code", "发送验证码"))
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)
                         .disabled(isLoading || email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
 
                     case .enterCode:
-                        Text("验证码已发送至：\(email)")
+                        Text(String(format: t("Code sent to: %@", "验证码已发送至：%@"), email))
                             .font(.footnote)
                             .foregroundStyle(.secondary)
 
-                        TextField("6 位验证码", text: $code)
+                        TextField(t("6-digit code", "6 位验证码"), text: $code)
                             .keyboardType(.numberPad)
                             .textFieldStyle(.roundedBorder)
 
                         Button {
                             Task { await verifyCode() }
                         } label: {
-                            Text(isLoading ? "验证中…" : "验证并登录")
+                            Text(isLoading ? t("Verifying…", "验证中…") : t("Verify & sign in", "验证并登录"))
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)
                         .disabled(isLoading || code.trimmingCharacters(in: .whitespacesAndNewlines).count < 6)
 
-                        Button("重新发送") {
+                        Button(t("Resend", "重新发送")) {
                             Task { await sendCode() }
                         }
                         .disabled(isLoading)
 
-                        Button("换个邮箱") {
+                        Button(t("Use a different email", "换个邮箱")) {
                             step = .enterEmail
                             code = ""
                         }
@@ -75,11 +78,11 @@ struct EmailOTPLoginView: View {
                 Spacer()
             }
             .padding()
-            .alert("登录失败", isPresented: Binding(
+            .alert(t("Sign-in failed", "登录失败"), isPresented: Binding(
                 get: { errorMessage != nil },
                 set: { isPresented in if !isPresented { errorMessage = nil } }
             )) {
-                Button("知道了", role: .cancel) { errorMessage = nil }
+                Button(t("OK", "知道了"), role: .cancel) { errorMessage = nil }
             } message: {
                 Text(errorMessage ?? "")
             }

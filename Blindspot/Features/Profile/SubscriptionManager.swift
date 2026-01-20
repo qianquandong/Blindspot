@@ -96,7 +96,7 @@ final class SubscriptionManager: ObservableObject {
     private func checkVerified<T>(_ result: VerificationResult<T>) throws -> T {
         switch result {
         case .unverified:
-            throw NSError(domain: "StoreKit", code: 1, userInfo: [NSLocalizedDescriptionKey: "Transaction 未通过验证"])
+            throw NSError(domain: "StoreKit", code: 1, userInfo: [NSLocalizedDescriptionKey: "Transaction could not be verified"])
         case .verified(let safe):
             return safe
         }

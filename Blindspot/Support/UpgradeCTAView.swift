@@ -3,15 +3,18 @@ import SwiftUI
 struct UpgradeCTAView: View {
     let title: String
     let message: String
+    @Environment(\.appLanguage) private var appLanguage
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        let t = { (en: String, zh: String) in SRL10n.t(en: en, zhHans: zh, lang: appLanguage) }
+
+        return VStack(alignment: .leading, spacing: 10) {
             Text(title)
                 .font(.headline)
             Text(message)
                 .foregroundStyle(.secondary)
                 .font(.subheadline)
-            Text("去 Profile 升级订阅")
+            Text(t("Go to Profile to upgrade", "去 Profile 升级订阅"))
                 .font(.subheadline.weight(.semibold))
                 .padding(.top, 4)
         }
@@ -23,7 +26,7 @@ struct UpgradeCTAView: View {
 }
 
 #Preview {
-    UpgradeCTAView(title: "解锁 Pro", message: "升级后可查看完整今日结论与行动建议")
+    UpgradeCTAView(title: "Unlock Pro", message: "Upgrade to see the full daily conclusion and suggested actions.")
         .padding()
 }
 
