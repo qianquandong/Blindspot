@@ -11,8 +11,8 @@ struct SRBadgeView: View {
             Text(title)
                 .fontWeight(.semibold)
         }
-        .font(.caption)
-        .foregroundStyle(tint)
+        .font(.footnote.weight(.semibold))
+        .foregroundStyle(tint.opacity(0.95))
         .padding(.horizontal, 10)
         .padding(.vertical, 6)
         .background(tint.opacity(0.14))

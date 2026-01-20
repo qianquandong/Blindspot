@@ -11,7 +11,8 @@ struct TodayView: View {
     var body: some View {
         NavigationStack {
             content
-            .navigationTitle("Today")
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     DatePicker("", selection: $vm.selectedDate, displayedComponents: [.date])
@@ -48,7 +49,8 @@ struct TodayView: View {
             switch appState.subscriptionManager.tier {
             case .free:
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 12) {
+                    VStack(alignment: .leading, spacing: SRTheme.Spacing.l) {
+                        todayHeader
                         UpgradeCTAView(
                             title: "解锁今日创业指南（Pro）",
                             message: "升级后可查看：今日一句结论、新机会/高风险赛道、行动建议，以及 30 天游览"
@@ -66,105 +68,35 @@ struct TodayView: View {
                         }
                         Spacer(minLength: 0)
                     }
-                    .padding()
+                    .padding(.horizontal, 16)
+                    .padding(.top, 10)
+                    .padding(.bottom, 24)
                 }
+                .background(SRTheme.background)
 
             case .pro, .elite:
-                List {
-                    if SupabaseClientProvider.shared != nil {
-                        Section("今日机会") {
-                            if vm.dailyOpportunities.isEmpty {
-                                Text(vm.isLoading ? "加载中…" : "暂无数据")
-                                    .foregroundStyle(.secondary)
-                            } else {
-                                ForEach(vm.dailyOpportunities) { o in
-                                    VStack(alignment: .leading, spacing: 6) {
-                                        Text(o.title ?? "未命名")
-                                            .font(.headline)
-                                        if let s = o.summary, !s.isEmpty {
-                                            Text(s)
-                                                .foregroundStyle(.secondary)
-                                                .lineSpacing(4)
-                                        }
-                                        if let source = o.sourceTitle ?? o.sourceUrl {
-                                            Text(source)
-                                                .font(.caption)
-                                                .foregroundStyle(.secondary)
-                                        }
-                                    }
-                                    .padding(.vertical, 4)
-                                }
-                            }
-                        }
-                    }
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: SRTheme.Spacing.xl) {
+                        todayHeader
 
-                    if let updatedAt = vm.brief?.updatedAt {
-                        Section {
+                        if SupabaseClientProvider.shared != nil {
+                            proEliteSupabaseCards
+                        } else {
+                            proEliteBriefCards
+                        }
+
+                        if let updatedAt = vm.brief?.updatedAt {
                             Text("最近更新时间：\(updatedAt, style: .time)")
-                                .foregroundStyle(.secondary)
+                                .font(.footnote)
+                                .foregroundStyle(SRTheme.secondaryText)
+                                .padding(.top, 4)
                         }
                     }
-
-                    Section("今日结论") {
-                        Text(vm.brief?.dailyConclusion ?? (vm.isLoading ? "加载中…" : "暂无数据"))
-                    }
-
-                    Section("新机会") {
-                        if let items = vm.brief?.opportunities, !items.isEmpty {
-                            ForEach(items) { s in
-                                NavigationLink(value: s) {
-                                    VStack(alignment: .leading, spacing: 6) {
-                                        Text(s.summary).lineLimit(2)
-                                        HStack {
-                                            Text(s.industry)
-                                            Text(s.signalType.rawValue)
-                                            if let c = s.confidenceScore {
-                                                Text("置信度 \(String(format: "%.2f", c))")
-                                            }
-                                        }
-                                        .font(.caption)
-                                        .foregroundStyle(.secondary)
-                                    }
-                                }
-                            }
-                        } else {
-                            Text(vm.isLoading ? "加载中…" : "暂无机会")
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-
-                    Section("高风险赛道") {
-                        if let items = vm.brief?.risks, !items.isEmpty {
-                            ForEach(items) { s in
-                                NavigationLink(value: s) {
-                                    VStack(alignment: .leading, spacing: 6) {
-                                        Text(s.summary).lineLimit(2)
-                                        HStack {
-                                            Text(s.industry)
-                                            Text(s.signalType.rawValue)
-                                            if let c = s.confidenceScore {
-                                                Text("置信度 \(String(format: "%.2f", c))")
-                                            }
-                                        }
-                                        .font(.caption)
-                                        .foregroundStyle(.secondary)
-                                    }
-                                }
-                            }
-                        } else {
-                            Text(vm.isLoading ? "加载中…" : "暂无风险")
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-
-                    if let actions = vm.brief?.suggestedActions, !actions.isEmpty {
-                        Section("行动建议") {
-                            ForEach(actions, id: \.self) { a in
-                                Text("• \(a)")
-                            }
-                        }
-                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 10)
+                    .padding(.bottom, 28)
                 }
+                .background(SRTheme.background)
                 .navigationDestination(for: Signal.self) { s in
                     SignalDetailView(signal: s)
                 }
@@ -178,6 +110,155 @@ struct TodayView: View {
                     Button("知道了", role: .cancel) { vm.errorMessage = nil }
                 } message: {
                     Text(vm.errorMessage ?? "")
+                }
+            }
+        }
+    }
+
+    private var todayHeader: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Today")
+                .font(SRTheme.heroTitleFont())
+                .foregroundStyle(SRTheme.title)
+                .lineLimit(2)
+
+            Text(vm.selectedDate, style: .date)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(SRTheme.secondaryText)
+        }
+        .padding(.top, 6)
+    }
+
+    private var proEliteSupabaseCards: some View {
+        VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
+            Text("今日机会")
+                .font(SRTheme.sectionTitleFont())
+                .foregroundStyle(SRTheme.title)
+
+            if vm.dailyOpportunities.isEmpty {
+                SRCard(background: SRTheme.pastelBlue.opacity(0.55)) {
+                    Text(vm.isLoading ? "加载中…" : "暂无数据")
+                        .foregroundStyle(SRTheme.body)
+                }
+            } else {
+                VStack(spacing: SRTheme.Spacing.l) {
+                    ForEach(vm.dailyOpportunities) { o in
+                        SRCard(background: SRTheme.pastelLavender.opacity(0.62)) {
+                            VStack(alignment: .leading, spacing: 10) {
+                                Text(o.title ?? "未命名")
+                                    .font(.headline.weight(.bold))
+                                    .foregroundStyle(SRTheme.title)
+
+                                if let s = o.summary, !s.isEmpty {
+                                    Text(s)
+                                        .foregroundStyle(SRTheme.body)
+                                        .lineSpacing(5)
+                                }
+
+                                if let source = o.sourceTitle ?? o.sourceUrl {
+                                    Text(source)
+                                        .font(.footnote)
+                                        .foregroundStyle(SRTheme.secondaryText)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private var proEliteBriefCards: some View {
+        VStack(alignment: .leading, spacing: SRTheme.Spacing.xl) {
+            SRHeroCard(background: SRTheme.pastelLavender) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("今日结论")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(SRTheme.secondaryText)
+                    Text(vm.brief?.dailyConclusion ?? (vm.isLoading ? "加载中…" : "暂无数据"))
+                        .font(.title3.weight(.bold))
+                        .foregroundStyle(SRTheme.title)
+                        .lineSpacing(6)
+                        .textSelection(.enabled)
+                }
+            }
+
+            pastelSignalSection(
+                title: "新机会",
+                background: SRTheme.pastelLavender.opacity(0.68),
+                emptyText: vm.isLoading ? "加载中…" : "暂无机会",
+                items: vm.brief?.opportunities ?? []
+            )
+
+            pastelSignalSection(
+                title: "高风险赛道",
+                background: SRTheme.pastelMint.opacity(0.68),
+                emptyText: vm.isLoading ? "加载中…" : "暂无风险",
+                items: vm.brief?.risks ?? []
+            )
+
+            if let actions = vm.brief?.suggestedActions, !actions.isEmpty {
+                VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
+                    Text("行动建议")
+                        .font(SRTheme.sectionTitleFont())
+                        .foregroundStyle(SRTheme.title)
+
+                    SRCard(background: SRTheme.pastelBlue.opacity(0.55)) {
+                        VStack(alignment: .leading, spacing: 10) {
+                            ForEach(actions, id: \.self) { a in
+                                Text("• \(a)")
+                                    .foregroundStyle(SRTheme.body)
+                                    .lineSpacing(4)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private func pastelSignalSection(
+        title: String,
+        background: Color,
+        emptyText: String,
+        items: [Signal]
+    ) -> some View {
+        VStack(alignment: .leading, spacing: SRTheme.Spacing.m) {
+            Text(title)
+                .font(SRTheme.sectionTitleFont())
+                .foregroundStyle(SRTheme.title)
+
+            if items.isEmpty {
+                SRCard(background: background) {
+                    Text(emptyText)
+                        .foregroundStyle(SRTheme.body)
+                }
+            } else {
+                VStack(spacing: SRTheme.Spacing.l) {
+                    ForEach(items) { s in
+                        NavigationLink(value: s) {
+                            SRCard(background: background) {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    Text(s.summary)
+                                        .font(.headline.weight(.bold))
+                                        .foregroundStyle(SRTheme.title)
+                                        .lineLimit(3)
+                                        .lineSpacing(4)
+
+                                    HStack(spacing: 10) {
+                                        Text(s.industry)
+                                        Text(s.signalType.rawValue)
+                                        if let c = s.confidenceScore {
+                                            Text("置信度 \(String(format: "%.2f", c))")
+                                        }
+                                    }
+                                    .font(.footnote.weight(.semibold))
+                                    .foregroundStyle(SRTheme.secondaryText)
+                                }
+                            }
+                        }
+                        .buttonStyle(.plain)
+                    }
                 }
             }
         }
@@ -266,91 +347,79 @@ struct TodayView: View {
     }
 
     private var demoBanner: some View {
-        HStack(alignment: .top, spacing: 12) {
-            Image(systemName: "info.circle")
-                .font(.title3)
-                .foregroundStyle(.secondary)
+        SRCard(background: SRTheme.pastelBlue.opacity(0.55)) {
+            HStack(alignment: .top, spacing: 12) {
+                Image(systemName: "info.circle")
+                    .font(.title3)
+                    .foregroundStyle(SRTheme.secondaryText)
 
-            VStack(alignment: .leading, spacing: 6) {
-                Text("本地 Demo（不连后端）")
-                    .font(.headline)
-                Text("每条新闻=独立话题；可用顶部筛选切换来源。")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .lineSpacing(3)
-            }
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("本地 Demo（不连后端）")
+                        .font(.headline.weight(.bold))
+                        .foregroundStyle(SRTheme.title)
+                    Text("每条新闻=独立话题；可用顶部筛选切换来源。")
+                        .font(.subheadline)
+                        .foregroundStyle(SRTheme.secondaryText)
+                        .lineSpacing(3)
+                }
 
-            Spacer(minLength: 0)
+                Spacer(minLength: 0)
 
-            Button {
-                demoBannerDismissed = true
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(.secondary)
-                    .padding(8)
-                    .background(Color(uiColor: .tertiarySystemBackground))
-                    .clipShape(Circle())
+                Button {
+                    demoBannerDismissed = true
+                } label: {
+                    Image(systemName: "xmark")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(SRTheme.secondaryText)
+                        .padding(8)
+                        .background(SRTheme.surface.opacity(0.65))
+                        .clipShape(Circle())
+                }
             }
         }
-        .padding(16)
-        .background(Color(uiColor: .secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .stroke(Color(uiColor: .separator).opacity(0.35), lineWidth: 0.5)
-        )
-        .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 6)
     }
 
     private func demoTopicCard(_ t: StrategicTopic) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(t.topicName)
-                .font(.headline)
-                .foregroundStyle(.primary)
-                .lineLimit(3)
-                .lineSpacing(3)
-
-            Divider().opacity(0.3)
-
+        SRCard(background: SRTheme.pastelLavender.opacity(0.55)) {
             VStack(alignment: .leading, spacing: 12) {
-                VStack(alignment: .leading, spacing: 8) {
-                    SRBadgeView(icon: "🧬", title: "第一性原理", tint: .purple)
-                    Text(t.firstPrinciples)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .lineSpacing(5)
-                        .lineLimit(4)
-                }
+                Text(t.topicName)
+                    .font(.headline.weight(.bold))
+                    .foregroundStyle(SRTheme.title)
+                    .lineLimit(3)
+                    .lineSpacing(3)
 
-                VStack(alignment: .leading, spacing: 8) {
-                    SRBadgeView(icon: "💰", title: "商业机会", tint: .green)
-                    Text(t.businessOpportunity)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .lineSpacing(5)
-                        .lineLimit(4)
-                }
+                Divider().opacity(0.25)
 
-                VStack(alignment: .leading, spacing: 8) {
-                    SRBadgeView(icon: "🗺️", title: "未来路线", tint: .blue)
-                    Text(t.futureRoadmap)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .lineSpacing(5)
-                        .lineLimit(3)
+                VStack(alignment: .leading, spacing: 12) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        SRBadgeView(icon: "🧬", title: "第一性原理", tint: .purple)
+                        Text(t.firstPrinciples)
+                            .font(.subheadline)
+                            .foregroundStyle(SRTheme.body)
+                            .lineSpacing(5)
+                            .lineLimit(4)
+                    }
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        SRBadgeView(icon: "💰", title: "商业机会", tint: .green)
+                        Text(t.businessOpportunity)
+                            .font(.subheadline)
+                            .foregroundStyle(SRTheme.body)
+                            .lineSpacing(5)
+                            .lineLimit(4)
+                    }
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        SRBadgeView(icon: "🗺️", title: "未来路线", tint: .blue)
+                        Text(t.futureRoadmap)
+                            .font(.subheadline)
+                            .foregroundStyle(SRTheme.body)
+                            .lineSpacing(5)
+                            .lineLimit(3)
+                    }
                 }
             }
         }
-        .padding(16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(uiColor: .secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .stroke(Color(uiColor: .separator).opacity(0.35), lineWidth: 0.5)
-        )
-        .shadow(color: Color.black.opacity(0.12), radius: 12, x: 0, y: 8)
     }
 
     private func refreshIfNeeded(force: Bool = false) async {

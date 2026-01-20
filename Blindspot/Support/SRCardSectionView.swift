@@ -7,24 +7,17 @@ struct SRCardSectionView: View {
     var tint: Color = .purple
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            SRBadgeView(icon: icon, title: title, tint: tint)
+        SRCard(background: tint.opacity(0.12)) {
+            VStack(alignment: .leading, spacing: 12) {
+                SRBadgeView(icon: icon, title: title, tint: tint)
 
-            Text(text)
-                .font(.body)
-                .foregroundStyle(.secondary)
-                .lineSpacing(6)
-                .textSelection(.enabled)
+                Text(text)
+                    .font(.body)
+                    .foregroundStyle(SRTheme.body)
+                    .lineSpacing(7)
+                    .textSelection(.enabled)
+            }
         }
-        .padding(16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(uiColor: .secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .stroke(Color(uiColor: .separator).opacity(0.35), lineWidth: 0.5)
-        )
-        .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 6)
     }
 }
 

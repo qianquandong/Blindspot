@@ -9,8 +9,9 @@ struct StrategicTopicDetailView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 14) {
+            VStack(alignment: .leading, spacing: SRTheme.Spacing.l) {
                 header
+                    .padding(.top, 6)
 
                 SRCardSectionView(icon: "🧬", title: "第一性原理", text: topic.firstPrinciples, tint: .purple)
                 SRCardSectionView(icon: "💰", title: "商业机会", text: topic.businessOpportunity, tint: .green)
@@ -19,9 +20,10 @@ struct StrategicTopicDetailView: View {
                 Spacer(minLength: 12)
             }
             .padding(.horizontal, 16)
-            .padding(.vertical, 12)
+            .padding(.vertical, 14)
         }
-        .navigationTitle("话题")
+        .background(SRTheme.background)
+        .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -64,27 +66,25 @@ struct StrategicTopicDetailView: View {
     }
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(topic.topicName)
-                .font(.title2.weight(.bold))
-                .lineSpacing(4)
-                .textSelection(.enabled)
+        SRHeroCard(background: SRTheme.pastelLavender) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("话题")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(SRTheme.secondaryText)
 
-            if !topic.sourceTitle.isEmpty {
-                Text("来源：\(topic.sourceTitle)")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
+                Text(topic.topicName)
+                    .font(.title3.weight(.bold))
+                    .foregroundStyle(SRTheme.title)
+                    .lineSpacing(5)
+                    .textSelection(.enabled)
+
+                if !topic.sourceTitle.isEmpty {
+                    Text("来源：\(topic.sourceTitle)")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(SRTheme.secondaryText)
+                }
             }
         }
-        .padding(16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(uiColor: .secondarySystemBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .stroke(Color(uiColor: .separator).opacity(0.35), lineWidth: 0.5)
-        )
-        .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 6)
     }
 
     private func copy(_ text: String, label: String) {
