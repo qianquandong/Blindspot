@@ -1,0 +1,449 @@
+{
+  "" : {
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Blindspot-primary.dia",
+    "emit-module-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Blindspot-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Blindspot-primary-emit-module.dia",
+    "pch" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Blindspot-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Blindspot-primary.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/App/AppState.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppState~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/App/MainTabView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MainTabView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/App/RootView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/RootView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Auth/AuthAPI.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthAPI~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Auth/AuthManager.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthManager~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Auth/AuthSession.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AuthSession~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Auth/EmailOTPLoginView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EmailOTPLoginView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Auth/LoginView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/LoginView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/BlindspotApp.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/BlindspotApp~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/ContentView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Demo/DemoReportStore.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DemoReportStore~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Demo/NBCReportDemoData.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/NBCReportDemoData~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Profile/EliteProfileView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfileView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Profile/ProfileView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ProfileView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Profile/SubscriptionManager.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SubscriptionManager~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Signals/SignalDetailView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalDetailView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Signals/SignalsView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Signals/SignalsViewModel.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsViewModel~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Today/StrategicTopicDetailView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopicDetailView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Today/TodayView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Today/TodayViewModel.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/TodayViewModel~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/DailyBrief.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyBrief~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/DailyOpportunity.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyOpportunity~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/DailyStrategicReport.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DailyStrategicReport~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/EliteBrief.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteBrief~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/EliteProfile.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/EliteProfile~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/Signal.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/Signal~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/SignalsPage.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SignalsPage~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Models/StrategicTopic.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/StrategicTopic~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Networking/APIClient.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIClient~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Networking/APIError.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/APIError~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Networking/AppConfig.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/AppConfig~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Networking/MockServer.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/MockServer~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Networking/SupabaseClientProvider.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseClientProvider~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Networking/SupabaseConfig.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SupabaseConfig~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Networking/UsageService.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UsageService~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Support/DateFormatters.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/DateFormatters~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Support/JSONCoders.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/JSONCoders~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Support/KeychainStore.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/KeychainStore~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Support/ResponseCache.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/ResponseCache~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Support/SRBadgeView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRBadgeView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Support/SRCardSectionView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/SRCardSectionView~partial.swiftmodule"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Support/UpgradeCTAView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView.dia",
+    "index-unit-output-path" : "/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView.o",
+    "llvm-bc" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView.bc",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView.swiftdeps",
+    "swiftmodule" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Blindspot.build/Debug-iphoneos/Blindspot.build/Objects-normal/arm64/UpgradeCTAView~partial.swiftmodule"
+  }
+}

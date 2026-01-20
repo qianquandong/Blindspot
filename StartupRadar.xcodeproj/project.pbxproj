@@ -6,14 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0D0D0D02F2A000000000003 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = D0D0D0D02F2A000000000002 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		C0A723742F1D7DB300DE8895 /* StartupRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartupRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A723742F1D7DB300DE8895 /* Blindspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blindspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C0A723762F1D7DB300DE8895 /* StartupRadar */ = {
+		C0A723762F1D7DB300DE8895 /* Blindspot */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StartupRadar;
+			path = Blindspot;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D0D0D02F2A000000000003 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +37,7 @@
 		C0A7236B2F1D7DB300DE8895 = {
 			isa = PBXGroup;
 			children = (
-				C0A723762F1D7DB300DE8895 /* StartupRadar */,
+				C0A723762F1D7DB300DE8895 /* Blindspot */,
 				C0A723752F1D7DB300DE8895 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +45,7 @@
 		C0A723752F1D7DB300DE8895 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0A723742F1D7DB300DE8895 /* StartupRadar.app */,
+				C0A723742F1D7DB300DE8895 /* Blindspot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +53,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C0A723732F1D7DB300DE8895 /* StartupRadar */ = {
+		C0A723732F1D7DB300DE8895 /* Blindspot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0A7237F2F1D7DB900DE8895 /* Build configuration list for PBXNativeTarget "StartupRadar" */;
+			buildConfigurationList = C0A7237F2F1D7DB900DE8895 /* Build configuration list for PBXNativeTarget "Blindspot" */;
 			buildPhases = (
 				C0A723702F1D7DB300DE8895 /* Sources */,
 				C0A723712F1D7DB300DE8895 /* Frameworks */,
@@ -61,13 +66,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C0A723762F1D7DB300DE8895 /* StartupRadar */,
+				C0A723762F1D7DB300DE8895 /* Blindspot */,
 			);
-			name = StartupRadar;
+			name = Blindspot;
 			packageProductDependencies = (
+				D0D0D0D02F2A000000000002 /* Supabase */,
 			);
-			productName = StartupRadar;
-			productReference = C0A723742F1D7DB300DE8895 /* StartupRadar.app */;
+			productName = Blindspot;
+			productReference = C0A723742F1D7DB300DE8895 /* Blindspot.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +91,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C0A7236F2F1D7DB300DE8895 /* Build configuration list for PBXProject "StartupRadar" */;
+			buildConfigurationList = C0A7236F2F1D7DB300DE8895 /* Build configuration list for PBXProject "Blindspot" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,12 +100,15 @@
 			);
 			mainGroup = C0A7236B2F1D7DB300DE8895;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D0D0D0D02F2A000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0A723752F1D7DB300DE8895 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0A723732F1D7DB300DE8895 /* StartupRadar */,
+				C0A723732F1D7DB300DE8895 /* Blindspot */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +265,9 @@
 				DEVELOPMENT_TEAM = LFT929ZZ2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Blindspot;
+				INFOPLIST_KEY_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzdnFpcmtoYmF2ZnptbHNpdnJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg4NDM1NTQsImV4cCI6MjA4NDQxOTU1NH0.WKhn6Amt989ioOKy78oIdg4lywSwhfolCTS43V4TGzs";
+				INFOPLIST_KEY_SUPABASE_URL = "https://bsvqirkhbavfzmlsivry.supabase.co";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,7 +278,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jack.StartupRadar;
+				PRODUCT_BUNDLE_IDENTIFIER = Jack.Blindspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,6 +300,9 @@
 				DEVELOPMENT_TEAM = LFT929ZZ2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Blindspot;
+				INFOPLIST_KEY_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzdnFpcmtoYmF2ZnptbHNpdnJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg4NDM1NTQsImV4cCI6MjA4NDQxOTU1NH0.WKhn6Amt989ioOKy78oIdg4lywSwhfolCTS43V4TGzs";
+				INFOPLIST_KEY_SUPABASE_URL = "https://bsvqirkhbavfzmlsivry.supabase.co";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jack.StartupRadar;
+				PRODUCT_BUNDLE_IDENTIFIER = Jack.Blindspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -332,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0D0D0D02F2A000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0D0D0D02F2A000000000002 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0D0D0D02F2A000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0A7236C2F1D7DB300DE8895 /* Project object */;
 }

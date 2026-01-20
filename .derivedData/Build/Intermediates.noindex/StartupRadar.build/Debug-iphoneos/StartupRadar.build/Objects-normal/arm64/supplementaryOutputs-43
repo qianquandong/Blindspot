@@ -1,0 +1,37 @@
+{
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/StartupRadar/Support/JSONCoders.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/JSONCoders.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/JSONCoders.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/JSONCoders.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/JSONCoders.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/JSONCoders.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/StartupRadar/Support/KeychainStore.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/KeychainStore.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/KeychainStore.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/KeychainStore.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/KeychainStore.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/KeychainStore.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/StartupRadar/Support/ResponseCache.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/ResponseCache.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/ResponseCache.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/ResponseCache.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/ResponseCache.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/ResponseCache.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/StartupRadar/Support/SRBadgeView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRBadgeView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRBadgeView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRBadgeView.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRBadgeView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRBadgeView.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/StartupRadar/Support/SRCardSectionView.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRCardSectionView.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRCardSectionView.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRCardSectionView.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRCardSectionView.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/StartupRadar.build/Debug-iphoneos/StartupRadar.build/Objects-normal/arm64/SRCardSectionView.swiftdeps"
+  }
+}

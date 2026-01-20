@@ -1,0 +1,64 @@
+{
+  "source": "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Signals/SignalDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Signal",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏷️",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 13
+        }
+      },
+      {
+        "comment": "",
+        "key": "行业 / 类型",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "行业",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "类型",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "置信度",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "日期",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 23
+        }
+      }
+    ]
+  },
+  "version": 1
+}

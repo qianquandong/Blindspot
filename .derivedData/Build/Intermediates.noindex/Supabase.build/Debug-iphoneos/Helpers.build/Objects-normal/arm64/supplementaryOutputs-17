@@ -1,0 +1,23 @@
+{
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/supabase-swift/Sources/Helpers/HTTP/LoggerInterceptor.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/LoggerInterceptor.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/LoggerInterceptor.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/LoggerInterceptor.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/LoggerInterceptor.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/LoggerInterceptor.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/supabase-swift/Sources/Helpers/HTTP/RetryRequestInterceptor.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/RetryRequestInterceptor.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/RetryRequestInterceptor.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/RetryRequestInterceptor.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/RetryRequestInterceptor.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/RetryRequestInterceptor.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/supabase-swift/Sources/Helpers/JWT.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/JWT.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/JWT.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/JWT.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/JWT.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Helpers.build/Objects-normal/arm64/JWT.swiftdeps"
+  }
+}

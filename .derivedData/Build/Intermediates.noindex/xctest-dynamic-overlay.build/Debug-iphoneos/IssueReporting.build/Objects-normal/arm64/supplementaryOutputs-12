@@ -1,0 +1,23 @@
+{
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/xctest-dynamic-overlay/Sources/IssueReporting/Internal/XCTest.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/XCTest.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/XCTest.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/XCTest.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/XCTest.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/XCTest.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/xctest-dynamic-overlay/Sources/IssueReporting/IsTesting.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IsTesting.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IsTesting.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IsTesting.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IsTesting.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IsTesting.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/xctest-dynamic-overlay/Sources/IssueReporting/IssueReporter.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IssueReporter.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IssueReporter.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IssueReporter.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IssueReporter.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphoneos/IssueReporting.build/Objects-normal/arm64/IssueReporter.swiftdeps"
+  }
+}

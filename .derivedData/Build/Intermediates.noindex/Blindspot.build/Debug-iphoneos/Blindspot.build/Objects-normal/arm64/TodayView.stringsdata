@@ -1,0 +1,272 @@
+{
+  "source": "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Features/Today/TodayView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "已复制",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Today",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "加载失败",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "复制邮件HTML",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "知道了",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "邮件 HTML 已复制到剪贴板，可直接粘贴到邮件发送。",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "加载失败",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "Free 用户不展示结论/建议（符合 PRD 权限）",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "今日机会",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "今日结论",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "新机会",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 112
+        }
+      },
+      {
+        "comment": "",
+        "key": "高风险赛道",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 136
+        }
+      },
+      {
+        "comment": "",
+        "key": "行动建议",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "加载中…",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "暂无数据",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "最近更新时间：%@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "加载中…",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "暂无机会",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "置信度 %@",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 122
+        }
+      },
+      {
+        "comment": "",
+        "key": "加载中…",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "暂无风险",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "置信度 %@",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 163
+        }
+      },
+      {
+        "comment": "",
+        "key": "知道了",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "知道了",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "每日深度战略洞察",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 250
+        }
+      },
+      {
+        "comment": "",
+        "key": "来源",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 255
+        }
+      },
+      {
+        "comment": "",
+        "key": "精选摘要",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 256
+        }
+      },
+      {
+        "comment": "",
+        "key": "NBC RSS",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 257
+        }
+      },
+      {
+        "comment": "",
+        "key": "全部",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 258
+        }
+      },
+      {
+        "comment": "",
+        "key": "本地 Demo（不连后端）",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 275
+        }
+      },
+      {
+        "comment": "",
+        "key": "每条新闻=独立话题；可用顶部筛选切换来源。",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 277
+        }
+      }
+    ]
+  },
+  "version": 1
+}

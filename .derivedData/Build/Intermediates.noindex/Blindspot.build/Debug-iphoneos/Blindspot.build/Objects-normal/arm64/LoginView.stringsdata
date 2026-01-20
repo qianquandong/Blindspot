@@ -1,0 +1,96 @@
+{
+  "source": "/Users/tiantongli/Documents/StartupRadar/StartupRadar/Blindspot/Auth/LoginView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "登录失败",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Blindspot",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "当前无后端：请进入本地 Demo 模式继续",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "已连接 Supabase（邮箱验证码登录）。内容仍为本地 Demo（未配置自建 API）。",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "已连接 Supabase（邮箱验证码登录）。",
+        "location": {
+          "startingColumn": 153,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "邮箱验证码登录",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "本地 Demo（DEBUG）",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "输入后端 accessToken（Bearer token）",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "一键进入（本地数据 + Pro 权限）",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "使用 accessToken 登录",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "知道了",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 88
+        }
+      }
+    ]
+  },
+  "version": 1
+}

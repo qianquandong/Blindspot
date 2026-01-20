@@ -1,0 +1,30 @@
+{
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/supabase-swift/Sources/Auth/Internal/Constants.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Constants.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Constants.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Constants.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Constants.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Constants.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/supabase-swift/Sources/Auth/Internal/Dependencies.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Dependencies.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Dependencies.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Dependencies.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Dependencies.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/Dependencies.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/supabase-swift/Sources/Auth/Internal/EventEmitter.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/EventEmitter.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/EventEmitter.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/EventEmitter.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/EventEmitter.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/EventEmitter.swiftdeps"
+  },
+  "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/SourcePackages/checkouts/supabase-swift/Sources/Auth/Internal/FixedWidthInteger+Random.swift" : {
+    "const-values" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/FixedWidthInteger+Random.swiftconstvalues",
+    "dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/FixedWidthInteger+Random.d",
+    "diagnostics" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/FixedWidthInteger+Random.dia",
+    "object" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/FixedWidthInteger+Random.o",
+    "swift-dependencies" : "/Users/tiantongli/Documents/StartupRadar/StartupRadar/.derivedData/Build/Intermediates.noindex/Supabase.build/Debug-iphoneos/Auth.build/Objects-normal/arm64/FixedWidthInteger+Random.swiftdeps"
+  }
+}
